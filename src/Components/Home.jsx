@@ -12,19 +12,17 @@ const Home = () => {
 
     const listRef = useRef(null);
 
-    // Smooth scrolling effect
     useEffect(() => {
         const scrollContainer = listRef.current;
         let scrollInterval;
 
         const startScrolling = () => {
             scrollInterval = setInterval(() => {
-                scrollContainer.scrollTop += 1; // Scroll down by 1 pixel
-                // Reset scroll to top when reaching bottom
+                scrollContainer.scrollTop += 1; 
                 if (scrollContainer.scrollTop >= scrollContainer.scrollHeight - scrollContainer.clientHeight) {
                     scrollContainer.scrollTop = 0;
                 }
-            }, 30); // Adjust speed by changing the interval
+            }, 30);
         };
 
         const stopScrolling = () => {

@@ -2,7 +2,6 @@ import React from 'react';
 import 'tailwindcss/tailwind.css';
 
 const Gallery = () => {
-    // Sample data for images and videos
     const images = [
         'https://scontent.fmaa12-1.fna.fbcdn.net/v/t39.30808-6/459616277_18032240348233948_8614826931966292225_n.jpg?stp=dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=z6kowZP5IrIQ7kNvgH4maUT&_nc_ht=scontent.fmaa12-1.fna&_nc_gid=Am1j4Ijhk1OywdcZF67eOZz&oh=00_AYBebNnjGbCYyBsIgqaQ43S3MJtcXekWMqxJ0UuczAxnCg&oe=66FF6D32',
         'https://scontent.fmaa12-1.fna.fbcdn.net/v/t39.30808-6/458175957_18030791423233948_1271069445085681135_n.jpg?stp=dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LhmlRKptrGEQ7kNvgGtbpvc&_nc_ht=scontent.fmaa12-1.fna&_nc_gid=Azd72zb1JHOykmwVBEXBpta&oh=00_AYA0_uZJhj1BJdtZwP6ZQCYxHCPiCbQs0RneUOtefHfU5Q&oe=66FF4F78',

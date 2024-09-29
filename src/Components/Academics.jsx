@@ -14,7 +14,7 @@ const Academics = () => {
     ];
 
     const studyMaterials = [
-        { title: 'Book List Nursery to Class V', link: '/path/to/chemistry-guide.pdf' },
+        { title: 'Book List Nursery to Class V', link: 'https://www.advancedacademyindore.com/wp-content/uploads/2016/03/Nursery-to-Class-V.pdf' },
         { title: 'Book List Classes VI to VIII', link: 'https://www.advancedacademyindore.com/wp-content/uploads/2016/03/Classes-VI-to-VIII.pdf' },
         { title: 'Book List Classes IX to XII', link: 'https://www.advancedacademyindore.com/wp-content/uploads/2016/03/Classes-IX-to-XII.pdf' },
     ];

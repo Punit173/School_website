@@ -34,7 +34,6 @@ const Navbar = () => {
                 </div>
 
                 <div className={`sm:flex ${isOpen ? 'block' : 'hidden'} absolute sm:static top-0 right-0 bg-black h-screen sm:h-auto sm:w-auto sm:bg-transparent space-y-8 p-6 w-1/2 lg:space-y-0 lg:p-0 md:space-y-0 md:p-0 sm:space-y-0 sm:p-0 bg-opacity-80`}>
-                    {/* Close Button for Mobile View */}
                     <button onClick={toggleMenu} className="text-white hover:text-gray-300 focus:outline-none absolute top-4 right-4 sm:hidden">
                         <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
