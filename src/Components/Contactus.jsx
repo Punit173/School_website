@@ -1,5 +1,7 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock, faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Contactus = () => {
     const sectionStyle = {
@@ -14,16 +16,20 @@ const Contactus = () => {
                 <div className="flex flex-col md:flex-row justify-between gap-8">
                     <div className="flex-1 bg-[#e8e5ce] p-6 rounded-lg shadow-lg">
                         <h2 className="text-2xl font-semibold text-teal-600 mb-4">Our Contact Details</h2>
-                        <p className="mb-2">
+                        <p className="mb-2 flex items-center">
+                            <FontAwesomeIcon icon={faClock} className="mr-2 text-teal-600" />
                             <strong>School Office Hours:</strong> 9:00 AM to 4:00 PM
                         </p>
-                        <p className="mb-2">
+                        <p className="mb-2 flex items-center">
+                            <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-teal-600" />
                             <strong>Address:</strong> ISKCON Vihar Colony, Nipania Rd, Indore, Madhya Pradesh 452016
                         </p>
-                        <p className="mb-2">
+                        <p className="mb-2 flex items-center">
+                            <FontAwesomeIcon icon={faPhone} className="mr-2 text-teal-600" />
                             <strong>Phone:</strong> 098277 20868
                         </p>
-                        <p className="mb-2">
+                        <p className="mb-2 flex items-center">
+                            <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-teal-600" />
                             <strong>Email:</strong> advancedindore@gmail.com
                         </p>
                     </div>

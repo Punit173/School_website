@@ -6,10 +6,9 @@ const NewsletterPopup = () => {
     const [email, setEmail] = useState("");
 
     const handleSubscribe = () => {
-        // Placeholder for subscribe functionality
         alert(`Subscribed with: ${email}`);
-        setEmail(""); // Clear the email input
-        setIsOpen(false); // Close the popup
+        setEmail(""); 
+        setIsOpen(false); 
     };
 
     return (

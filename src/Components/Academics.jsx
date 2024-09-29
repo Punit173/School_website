@@ -1,20 +1,22 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalculator, faAtom, faFlask, faBookOpen, faLaptopCode, faPenFancy } from '@fortawesome/free-solid-svg-icons';
 
 const Academics = () => {
-    const timetable = [
-        { day: 'Monday', subject: 'Mathematics', time: '9:00 AM - 10:00 AM' },
-        { day: 'Monday', subject: 'Physics', time: '10:15 AM - 11:15 AM' },
-        { day: 'Wednesday', subject: 'Chemistry', time: '9:00 AM - 10:00 AM' },
-        { day: 'Wednesday', subject: 'Biology', time: '10:15 AM - 11:15 AM' },
-        { day: 'Friday', subject: 'Computer Science', time: '9:00 AM - 10:00 AM' },
-        { day: 'Friday', subject: 'English', time: '10:15 AM - 11:15 AM' },
+    const subjects = [
+        { title: 'Mathematics', description: 'Explore algebra, geometry, and calculus concepts.', icon: faCalculator },
+        { title: 'Physics', description: 'Study the laws of motion, energy, and matter.', icon: faAtom },
+        { title: 'Chemistry', description: 'Learn about chemical reactions, elements, and compounds.', icon: faFlask },
+        { title: 'Biology', description: 'Understand the structure and function of living organisms.', icon: faBookOpen },
+        { title: 'Computer Science', description: 'Introduction to programming and computer systems.', icon: faLaptopCode },
+        { title: 'English', description: 'Enhance your language skills in writing and literature.', icon: faPenFancy },
     ];
 
     const studyMaterials = [
         { title: 'Book List Nursery to Class V', link: '/path/to/chemistry-guide.pdf' },
         { title: 'Book List Classes VI to VIII', link: 'https://www.advancedacademyindore.com/wp-content/uploads/2016/03/Classes-VI-to-VIII.pdf' },
-        { title: 'Book List CLasses IX to XII', link: 'https://www.advancedacademyindore.com/wp-content/uploads/2016/03/Classes-IX-to-XII.pdf' },
+        { title: 'Book List Classes IX to XII', link: 'https://www.advancedacademyindore.com/wp-content/uploads/2016/03/Classes-IX-to-XII.pdf' },
     ];
 
     return (
@@ -23,29 +25,20 @@ const Academics = () => {
                 <h1 className="text-4xl font-bold text-center mb-8 text-white">Academics</h1>
 
                 <div className="mb-12">
-                    <h2 className="text-2xl font-semibold mb-4 text-white">Class Timetable</h2>
-                    <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-lg">
-                        <thead>
-                            <tr className="bg-white">
-                                <th className="py-2 px-4 border border-gray-300 bg-[#023813] text-white">Day</th>
-                                <th className="py-2 px-4 border border-gray-300 bg-[#023813] text-white">Subject</th>
-                                <th className="py-2 px-4 border border-gray-300 bg-[#023813] text-white">Time</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {timetable.map((item, index) => (
-                                <tr key={index}>
-                                    <td className="py-2 px-4 border border-gray-300 bg-[#e8e5ce]">{item.day}</td>
-                                    <td className="py-2 px-4 border border-gray-300 bg-[#e8e5ce]">{item.subject}</td>
-                                    <td className="py-2 px-4 border border-gray-300 bg-[#e8e5ce]">{item.time}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                    <h2 className="text-2xl font-semibold mb-4 text-white">Subject Highlights</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {subjects.map((subject, index) => (
+                            <div key={index} className="bg-[#e8e5ce] rounded-lg p-6 shadow-lg text-center">
+                                <FontAwesomeIcon icon={subject.icon} className="h-16 mb-4 mx-auto text-[#e04d46]" />
+                                <h3 className="text-xl font-semibold mb-2 text-[#e04d46]">{subject.title}</h3>
+                                <p className="text-gray-700">{subject.description}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
                 <div>
-                    <h2 className="text-2xl  font-semibold mb-4 text-white">Book List</h2>
+                    <h2 className="text-2xl font-semibold mb-4 text-white">Book List</h2>
                     <ul className="list-disc list-inside">
                         {studyMaterials.map((material, index) => (
                             <li key={index} className="mb-2">

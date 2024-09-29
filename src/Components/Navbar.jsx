@@ -3,7 +3,6 @@ import icon from '../assets/download.jpg';
 import { useState } from 'react';
 import NewsletterPopup from './NewsletterPopup';
 
-
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -26,7 +25,11 @@ const Navbar = () => {
                             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>
-                        ) : null}
+                        ) : (
+                            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        )}
                     </button>
                 </div>
 
@@ -46,9 +49,7 @@ const Navbar = () => {
                     <a href="#contact" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Contact Us</a>
                     <a href="#announcements" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Announcements</a>
 
-                    <button onClick={() => setIsOpen(true)} className="block sm:inline-block py-2 px-4 bg-blue-600 rounded hover:bg-blue-700">
-                        Subscribe to Newsletter
-                    </button>
+                    
                 </div>
             </div>
         </nav>
