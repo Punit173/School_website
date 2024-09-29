@@ -5,3 +5,19 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
+@keyframes scrollY {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@layer utilities {
+  .scroll-animation {
+    animation: scrollY 10s linear infinite;
+  }
+}
+
