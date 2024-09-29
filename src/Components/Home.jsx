@@ -43,7 +43,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="relative text-white py-20" style={sectionStyle}>
+            <div className="relative text-white py-20 bg-black" >
                 <div className="absolute inset-0 bg-black opacity-75"></div>
                 <div className="max-w-7xl mx-auto px-4 flex flex-col items-center justify-center relative z-10 gap-6">
                     <img
@@ -72,17 +72,17 @@ const Home = () => {
                         </div>
                         <div className="flex-1 md:max-w-xs">
                             <div className="bg-white text-black shadow-lg rounded-lg relative overflow-hidden">
-                                <h2 className="font-bold p-5 bg-orange-50 text-black z-10 relative">Announcement</h2>
+                                <h2 className="font-bold p-5 bg-[#023813] text-white z-10 relative">Announcement</h2>
                                 <div className="overflow-y-auto max-h-56" ref={listRef}>
                                     <ul className="p-4 space-y-4">
-                                        <li className="p-4 bg-gray-100 rounded-md">Lorem ipsum</li>
-                                        <li className="p-4 bg-gray-100 rounded-md">Lorem ipsum</li>
-                                        <li className="p-4 bg-gray-100 rounded-md">Lorem ipsum</li>
-                                        <li className="p-4 bg-gray-100 rounded-md">Lorem ipsum</li>
-                                        <li className="p-4 bg-gray-100 rounded-md">Lorem ipsum</li>
-                                        <li className="p-4 bg-gray-100 rounded-md">Lorem ipsum</li>
-                                        <li className="p-4 bg-gray-100 rounded-md">Lorem ipsum</li>
-                                        <li className="p-4 bg-gray-100 rounded-md">Lorem ipsum</li>
+                                        <li className="p-4 bg-[#e8e5ce] rounded-md">Lorem ipsum</li>
+                                        <li className="p-4 bg-[#e8e5ce] rounded-md">Lorem ipsum</li>
+                                        <li className="p-4 bg-[#e8e5ce] rounded-md">Lorem ipsum</li>
+                                        <li className="p-4 bg-[#e8e5ce] rounded-md">Lorem ipsum</li>
+                                        <li className="p-4 bg-[#e8e5ce] rounded-md">Lorem ipsum</li>
+                                        <li className="p-4 bg-[#e8e5ce] rounded-md">Lorem ipsum</li>
+                                        <li className="p-4 bg-[#e8e5ce] rounded-md">Lorem ipsum</li>
+                                        <li className="p-4 bg-[#e8e5ce] rounded-md">Lorem ipsum</li>
                                     </ul>
                                 </div>
                             </div>

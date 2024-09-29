@@ -8,6 +8,7 @@ import Home from './Components/Home';
 import Aboutus from './Components/Aboutus';
 import Contactus from './Components/Contactus';
 import Announcements from './Components/Announcements';
+import NewsletterPopup from './Components/NewsletterPopup';
 
 function App() {
   const [count, setCount] = useState(0)

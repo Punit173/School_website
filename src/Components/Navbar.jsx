@@ -1,7 +1,7 @@
-import React from 'react'
-import icon from '../assets/download.jpg'
+import React from 'react';
+import icon from '../assets/download.jpg';
 import { useState } from 'react';
-
+import NewsletterPopup from './NewsletterPopup';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +9,7 @@ const Navbar = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
     return (
         <nav className="bg-[#e04d46] text-white py-4 fixed z-10 w-full">
             <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
@@ -17,6 +18,7 @@ const Navbar = () => {
                     <span className="font-bold text-2xl hidden md:flex">ADVANCED ACADEMY</span>
                 </div>
 
+                {/* Hamburger Icon for Mobile View */}
                 <div className="flex sm:hidden">
                     <button onClick={toggleMenu} className="text-white hover:text-gray-300 focus:outline-none">
                         {!isOpen ? (
@@ -27,22 +29,31 @@ const Navbar = () => {
                     </button>
                 </div>
 
+                {/* Menu Items */}
                 <div className={`sm:flex ${isOpen ? 'block' : 'hidden'} absolute sm:static top-0 right-0 bg-black h-screen sm:h-auto sm:w-auto sm:bg-transparent space-y-8 p-6 w-1/2 lg:space-y-0 lg:p-0 md:space-y-0 md:p-0 sm:space-y-0 sm:p-0 bg-opacity-80`}>
+                    {/* Close Button for Mobile View */}
                     <button onClick={toggleMenu} className="text-white hover:text-gray-300 focus:outline-none absolute top-4 right-4 sm:hidden">
                         <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
+
+                    {/* Navigation Links */}
                     <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300 mt-12 sm:mt-0">Home</a>
                     <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">About Us</a>
                     <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Academics</a>
                     <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Gallery</a>
                     <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Contact Us</a>
                     <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Announcements</a>
+
+                    {/* Newsletter Popup Trigger */}
+                    <button onClick={() => setIsOpen(true)} className="block sm:inline-block py-2 px-4 bg-blue-600 rounded hover:bg-blue-700">
+                        Subscribe to Newsletter
+                    </button>
                 </div>
             </div>
         </nav>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
