@@ -43,7 +43,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="relative text-white py-20 bg-black" >
+            <div className="relative text-white py-20 bg-black" id="home" >
                 <div className="absolute inset-0 bg-black opacity-75"></div>
                 <div className="max-w-7xl mx-auto px-4 flex flex-col items-center justify-center relative z-10 gap-6">
                     <img

@@ -3,6 +3,7 @@ import icon from '../assets/download.jpg';
 import { useState } from 'react';
 import NewsletterPopup from './NewsletterPopup';
 
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -11,7 +12,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-[#e04d46] text-white py-4 fixed z-10 w-full">
+        <nav className="bg-[#686758] text-white py-4 fixed z-20 w-full">
             <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
                 <div className="flex items-center">
                     <img src={icon} alt="NSCC Navbar Logo" className="h-16 mr-2 sm:mr-4" />
@@ -38,15 +39,13 @@ const Navbar = () => {
                         </svg>
                     </button>
 
-                    {/* Navigation Links */}
-                    <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300 mt-12 sm:mt-0">Home</a>
-                    <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">About Us</a>
-                    <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Academics</a>
-                    <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Gallery</a>
-                    <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Contact Us</a>
-                    <a href="" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Announcements</a>
+                    <a href="#home" className="block sm:inline-block py-2 px-4 hover:text-gray-300 mt-12 sm:mt-0">Home</a>
+                    <a href="#about" className="block sm:inline-block py-2 px-4 hover:text-gray-300">About Us</a>
+                    <a href="#academics" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Academics</a>
+                    <a href="#gallery" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Gallery</a>
+                    <a href="#contact" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Contact Us</a>
+                    <a href="#announcements" className="block sm:inline-block py-2 px-4 hover:text-gray-300">Announcements</a>
 
-                    {/* Newsletter Popup Trigger */}
                     <button onClick={() => setIsOpen(true)} className="block sm:inline-block py-2 px-4 bg-blue-600 rounded hover:bg-blue-700">
                         Subscribe to Newsletter
                     </button>

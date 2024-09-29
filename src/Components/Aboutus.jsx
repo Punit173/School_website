@@ -35,7 +35,7 @@ const Aboutus = () => {
     }, []);
 
     return (
-        <div className="bg-gray-300">
+        <div className="bg-gray-300" id="about">
             <div className="relative w-full max-w-3xl mx-auto overflow-hidden p-20 rounded-lg shadow-lg ">
                 <div
                     className="flex transition-transform duration-700 ease-in-out"
@@ -52,7 +52,6 @@ const Aboutus = () => {
                     ))}
                 </div>
 
-                {/* Navigation Buttons with Enhanced Styles */}
                 <button
                     onClick={prevSlide}
                     className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 shadow-lg hover:bg-gray-300 transition-colors duration-200"

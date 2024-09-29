@@ -9,6 +9,9 @@ import Aboutus from './Components/Aboutus';
 import Contactus from './Components/Contactus';
 import Announcements from './Components/Announcements';
 import NewsletterPopup from './Components/NewsletterPopup';
+import Academics from './Components/Academics';
+import Gallery from './Components/Gallery';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,9 +21,12 @@ function App() {
       <Navbar/>
       <Home/>
       <Aboutus/>
+      <Academics/>
+      <Gallery/>
       <Contactus/>  
       <Announcements/>
     </>
+
   )
 }
 
