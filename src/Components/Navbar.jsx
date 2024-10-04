@@ -14,11 +14,10 @@ const Navbar = () => {
         <nav className="bg-[#686758] text-white py-4 fixed z-20 w-full">
             <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
                 <div className="flex items-center">
-                    <img src={icon} alt="NSCC Navbar Logo" className="h-16 mr-2 sm:mr-4" />
+                    <img src={icon} alt="" className="h-16 mr-2 sm:mr-4" />
                     <span className="font-bold text-2xl hidden md:flex">ADVANCED ACADEMY</span>
                 </div>
 
-                {/* Hamburger Icon for Mobile View */}
                 <div className="flex sm:hidden">
                     <button onClick={toggleMenu} className="text-white hover:text-gray-300 focus:outline-none">
                         {!isOpen ? (

@@ -56,13 +56,13 @@ const Aboutus = () => {
                     onClick={prevSlide}
                     className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 shadow-lg hover:bg-gray-300 transition-colors duration-200"
                 >
-                    <span className="text-xl text-gray-800">&#10094;</span> {/* Left Arrow */}
+                    <span className="text-xl text-gray-800">&#10094;</span> 
                 </button>
                 <button
                     onClick={nextSlide}
                     className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 shadow-lg hover:bg-gray-300 transition-colors duration-200"
                 >
-                    <span className="text-xl text-gray-800">&#10095;</span> {/* Right Arrow */}
+                    <span className="text-xl text-gray-800">&#10095;</span> 
                 </button>
 
                 <div className="flex justify-center mt-4">
